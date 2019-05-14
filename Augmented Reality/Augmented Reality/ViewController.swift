@@ -24,18 +24,31 @@ class ViewController: UIViewController {
         let configuration = ARWorldTrackingConfiguration()
         sceneView.session.run(configuration)
     }
-    
+   
     func addDrone() {
         drone.loadModel()
         sceneView.scene.rootNode.addChildNode(drone)
     }
-    view raw
     
     let kMovingLengthPerLoop: CGFloat = 0.05
     let kRotationRadianPerLoop: CGFloat = 0.2
     
     @IBAction func upLongPressed(_ sender: UILongPressGestureRecognizer) {
         let action = SCNAction.moveBy(x: 0, y: kMovingLengthPerLoop, z: 0, duration: kAnimationDurationMoving)
+        execute(action: action, sender: sender)
+    }
+    
+    private func execute(action: SCNAction, sender: UILongPressGestureRecognizer) {
+        let loopAction = SCNAction.repeatForever(action)
+        if sender.state == .began {
+            drone.runAction(loopAction)
+        } else if sender.state == .ended {
+            drone.removeAllActions()
+        }
+    }
+    
+    @IBAction func downLongPressed(_ sender: UILongPressGestureRecognizer) {
+        let action = SCNAction.moveBy(x: 0, y: -kMovingLengthPerLoop, z: 0, duration: kAnimationDurationMoving)
         execute(action: action, sender: sender)
     }
 }

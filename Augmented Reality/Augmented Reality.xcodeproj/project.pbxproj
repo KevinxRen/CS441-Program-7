@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0A64AEE4228A6607006629C8 /* Drone_obj.obj in Resources */ = {isa = PBXBuildFile; fileRef = 0A64AEE3228A6607006629C8 /* Drone_obj.obj */; };
+		0A64AEE6228A6626006629C8 /* Drone.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A64AEE5228A6626006629C8 /* Drone.swift */; };
 		0AF7869322853B5800D96B1D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0AF7869222853B5800D96B1D /* AppDelegate.swift */; };
 		0AF7869522853B5800D96B1D /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0AF7869422853B5800D96B1D /* ViewController.swift */; };
 		0AF7869822853B5800D96B1D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0AF7869622853B5800D96B1D /* Main.storyboard */; };
@@ -35,6 +37,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		0A64AEE3228A6607006629C8 /* Drone_obj.obj */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Drone_obj.obj; sourceTree = "<group>"; };
+		0A64AEE5228A6626006629C8 /* Drone.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Drone.swift; sourceTree = "<group>"; };
 		0AF7868F22853B5800D96B1D /* Augmented Reality.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Augmented Reality.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		0AF7869222853B5800D96B1D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		0AF7869422853B5800D96B1D /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -106,6 +110,8 @@
 				0AF7869E22853B5A00D96B1D /* LaunchScreen.storyboard */,
 				0AF786A122853B5A00D96B1D /* Info.plist */,
 				0AF7869922853B5800D96B1D /* Augmented_Reality.xcdatamodeld */,
+				0A64AEE3228A6607006629C8 /* Drone_obj.obj */,
+				0A64AEE5228A6626006629C8 /* Drone.swift */,
 			);
 			path = "Augmented Reality";
 			sourceTree = "<group>";
@@ -232,6 +238,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0A64AEE4228A6607006629C8 /* Drone_obj.obj in Resources */,
 				0AF786A022853B5A00D96B1D /* LaunchScreen.storyboard in Resources */,
 				0AF7869D22853B5A00D96B1D /* Assets.xcassets in Resources */,
 				0AF7869822853B5800D96B1D /* Main.storyboard in Resources */,
@@ -261,6 +268,7 @@
 			files = (
 				0AF7869522853B5800D96B1D /* ViewController.swift in Sources */,
 				0AF7869B22853B5800D96B1D /* Augmented_Reality.xcdatamodeld in Sources */,
+				0A64AEE6228A6626006629C8 /* Drone.swift in Sources */,
 				0AF7869322853B5800D96B1D /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
